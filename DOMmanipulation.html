@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+</head>
+<body>
+    <h1 id="myheading">Original Heading</h1>
+    <p id="myparagraph">This is the original paragraph text.</p>
+    <button onclick="changecontentandstyle()">Click me to change text and style</button>
+    <script>
+        function changecontentandstyle(){
+            var heading = document.getElementById("myheading");
+            heading.textContent = "Heading has been changed";
+            heading.style.color = "red";
+            heading.style.fontsize = "40px";
+
+            var paragraph = document.getElementById("myparagraph");
+            paragraph.textContent = "The text content has been updated";
+            paragraph.style.color = "green";
+            paragraph.style.fontsize = "22px";
+        }
+    </script>
+    
+</body>
+</html>
